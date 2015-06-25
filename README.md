@@ -1,6 +1,15 @@
-# Ember-card-ui
+# Ember Card UI
 
-This README outlines the details of collaborating on this Ember addon.
+A "card" and component centric UI framework for Ember Applications
+
+The notion of a card is abstract notion of a container. This framework enables a high degree of composability with underlying primitives and flexible nesting of containers.
+
+Using this framework is should be possible to focus on purpose built UI units that are custom crafted for the content they must display.
+
+The framework handles concerns like layout and comparmentalization details leaving to to focus on composability of your UI.
+
+
+## Built with Ember CLI
 
 ## Installation
 
