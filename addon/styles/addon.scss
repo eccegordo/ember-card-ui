@@ -1,1 +1,36 @@
-body  { color: red; }
+@import "foundation/foundation";
+
+.demo {
+  background-color: #bdd7e7;
+  border: 1px solid #0587d6;
+  margin: 10px;
+}
+
+.half {
+  @include grid-container(
+    $width: 50%, // Can be any unit with a value
+    $align: center // Can be left, right, or center
+  );
+}
+
+.w-100px { width: 100px; }
+.w-200px { width: 200px; }
+.w-300px { width: 300px; }
+.w-400px { width: 400px; }
+.w-500px { width: 500px; }
+.w-600px { width: 600px; }
+.w-700px { width: 700px; }
+.w-800px { width: 800px; }
+.w-900px { width: 900px; }
+.w-1000px { width: 1000px; }
+
+.h-100px { height: 100px; }
+.h-200px { height: 200px; }
+.h-300px { height: 300px; }
+.h-400px { height: 400px; }
+.h-500px { height: 500px; }
+.h-600px { height: 600px; }
+.h-700px { height: 700px; }
+.h-800px { height: 800px; }
+.h-900px { height: 900px; }
+.h-1000px { height: 1000px; }

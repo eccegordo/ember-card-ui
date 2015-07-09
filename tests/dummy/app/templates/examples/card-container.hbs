@@ -1,0 +1,57 @@
+<h3>Card Container</h3>
+A wrapper for controlling arbitrary dimensions instead of automatic ones.
+
+<pre>
+\{{#card-container}}
+\{{yield}}
+\{{/card-container}}
+</pre>
+
+<hr>
+
+<h5>Example</h5>
+
+<code>
+<pre>
+  \{{#card-block}}
+    \{{#card-container class="w-100px h-300px"}}
+      \{{#card-block}}1\{{/card-block}}
+      \{{#card-block}}2\{{/card-block}}
+      \{{#card-block}}3\{{/card-block}}
+    \{{/card-container}}
+
+    \{{#card-container class="w-200px h-600px"}}
+      \{{#card-block}}1\{{/card-block}}
+      \{{#card-block}}2\{{/card-block}}
+      \{{#card-block}}3\{{/card-block}}
+    \{{/card-container}}
+
+    \{{#card-container class="w-300px h-200px"}}
+      \{{#card-block}}1\{{/card-block}}
+      \{{#card-block}}2\{{/card-block}}
+      \{{#card-block}}3\{{/card-block}}
+    \{{/card-container}}
+  \{{/card-block}}
+</pre>
+</code>
+
+<h5>Result</h5>
+  {{#card-block class="demo"}}
+    {{#card-container class="demo w-100px h-300px"}}
+      {{#card-block class="demo"}}1{{/card-block}}
+      {{#card-block class="demo"}}2{{/card-block}}
+      {{#card-block class="demo"}}3{{/card-block}}
+    {{/card-container}}
+
+    {{#card-container class="demo w-200px h-600px"}}
+      {{#card-block class="demo"}}1{{/card-block}}
+      {{#card-block class="demo"}}2{{/card-block}}
+      {{#card-block class="demo"}}3{{/card-block}}
+    {{/card-container}}
+
+    {{#card-container class="demo w-300px h-200px"}}
+      {{#card-block class="demo"}}1{{/card-block}}
+      {{#card-block class="demo"}}2{{/card-block}}
+      {{#card-block class="demo"}}3{{/card-block}}
+    {{/card-container}}
+  {{/card-block}}

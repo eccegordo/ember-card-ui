@@ -1,0 +1,60 @@
+<h3>Card Item</h3>
+A primitive for wrapping an item. When inside an item the flow is determined by the content.
+You can think of this as behaving like a column of content.
+
+
+<pre>
+\{{#card-item}}
+\{{yield}}
+\{{/card-item}}
+</pre>
+
+<hr>
+
+<h5>Example</h5>
+
+<code>
+<pre>
+  \{{#card-block}}
+    \{{#card-block}}
+      \{{#card-item}}
+        &lt;h4&gt;Some content&lt;/h4&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      \{{/card-item}}
+    \{{/card-block}}
+    \{{#card-block class="shrink"}}
+      \{{#card-item}}
+        &lt;ul&gt;
+          &lt;li&gt;bullet 1&lt;/li&gt;
+          &lt;li&gt;bullet 2&lt;/li&gt;
+          &lt;li&gt;bullet 3&lt;/li&gt;
+          &lt;li&gt;bullet 4 with some extra content&lt;/li&gt;
+        &lt;/ul&gt;
+      \{{/card-item}}
+    \{{/card-block}}
+  \{{/card-block}}
+</pre>
+</code>
+
+<h5>Result</h5>
+
+{{#card-block}}
+  {{#card-block class="demo"}}
+    {{#card-item}}
+      <h4>Some content</h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    {{/card-item}}
+  {{/card-block}}
+  {{#card-block class="demo shrink"}}
+    {{#card-item}}
+      <ul>
+        <li>bullet 1</li>
+        <li>bullet 2</li>
+        <li>bullet 3</li>
+        <li>bullet 4 with some extra content</li>
+      </ul>
+    {{/card-item}}
+  {{/card-block}}
+{{/card-block}}

@@ -1,0 +1,35 @@
+<h3>Card Block</h3>
+A block construct for layout. A block is a wrapper that allows your content to exist as a cell within a larger grid.
+By default the block has row characteristics and horizontal flow and automatic sizing.
+
+<h4>
+{{#link-to 'examples.card-block-vertical'}}See also card block vertical{{/link-to}}
+</h4>
+
+<pre>
+\{{#card-block}}
+\{{yield}}
+\{{/card-block}}
+</pre>
+
+<hr>
+
+<h5>Example</h5>
+
+<code>
+<pre>
+\{{#card-block}}
+  \{{#card-block}}Block 1\{{/card-block}}
+  \{{#card-block}}Block 2\{{/card-block}}
+  \{{#card-block}}Block 3\{{/card-block}}
+\{{/card-block}}
+</pre>
+</code>
+
+<h5>Result</h5>
+
+{{#card-block}}
+  {{#card-block class="demo"}}Block 1{{/card-block}}
+  {{#card-block class="demo"}}Block 2{{/card-block}}
+  {{#card-block class="demo"}}Block 3{{/card-block}}
+{{/card-block}}

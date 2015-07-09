@@ -1,0 +1,1 @@
+export { default } from 'ember-card-ui/components/card-item';
